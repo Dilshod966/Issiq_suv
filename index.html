@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosh Sahifa</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="load()">
+    <div class="addd">
+        <div class="login">
+            <p>Login</p>
+            <input type="text" id="name" placeholder="Ismingiz">
+            <input type="password" id="parol" placeholder="Password">
+            <button onclick="kirish()">Kirish</button>
+        </div>
+    </div>
+    <nav>
+        <div class="con">
+            <div class="navbars">
+                <img src="./image/logo2.png" alt="logo">
+                <span>Issiq Suv <br> Ta'minoti  </span>
+            </div>
+            
+            <div class="navbars">
+                <p id = "hello"></p>
+            </div>
+            <div class="navbars">
+                <div class="buttun" onclick="qosh()">+ Qo'shish</div>
+            </div>
+        </div>
+        <div class="modol">
+            <form>
+                <div class="fit">
+                    <p>Ro'yhatdan O'tish</p>
+                <button class="blur" onclick="nazad()" type="button">X</button>
+                </div>
+                <input type="text" placeholder="Ism" class="new-post__ism" required>
+                <input type="text" placeholder="Familiya" class="new-post__Familiya" required>
+                <input type="text  " placeholder="Hisob raqami" class="new-post__id" minlength="6" maxlength="6">
+                <input type="text" placeholder="Joriy balans" class="new-post__Balans" required>
+                <textarea id="manzil" cols="25" rows="2" placeholder="Manzilingiz" class="new-post__Manzil"></textarea>
+                <input type="tel" placeholder="Tel raqam" class="Tel" required>
+                <button class="buttun new-post__add" type="button">Qo'shish</button>
+
+            </form>
+        </div>
+    </nav>
+
+
+
+    <main>
+        <h3>Abanentlar Ro'yhati</h3>
+
+        <div class="posts">
+            <div>Number</div>
+            <div>Hisob raqam</div>
+            <div>Ism Familiya</div>
+            <div>Royhatga olingan vaqti</div>
+            <div>Manzil</div>
+            <div>Telfon raqami</div>
+            <div>Balans</div>
+        </div>
+        <div class="posts__list">
+
+
+        </div>
+        
+      
+              
+
+
+
+    </main>
+
+
+
+    <footer>
+        <p>ISSIQ SUV TA'MINOTI</p>
+        <p>© Design by Diwkoo</p>
+    </footer>
+
+
+<script src="./main.js"></script>
+</body>
+</html>
